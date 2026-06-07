@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godavarthi Naga Manoj Balaji | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Godavarthi Naga Manoj Balaji, a Computer Science & Engineering graduate specializing in AI, Deep Learning, and Full-Stack Development.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Grid/Glow Elements -->
+    <div class="glow-bg">
+        <div class="glow-sphere glow-primary"></div>
+        <div class="glow-sphere glow-secondary"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>Manoj<span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#competencies" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#stats" class="nav-link">GitHub Stats</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <div class="hero-text-block">
+                    <span class="hello-tag">Welcome to my space</span>
+                    <h1>Godavarthi Naga<br><span class="highlight-text">Manoj Balaji</span></h1>
+                    <h2 class="typewriter-container">
+                        I'm a <span id="typewriter" class="typewriter"></span>
+                    </h2>
+                    <p class="hero-desc">
+                        B.Tech Computer Science & Engineering graduate specializing in Artificial Intelligence & Deep Learning. Building smart, high-performance systems and full-stack solutions.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Explore Projects <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+
+                <!-- Python IDE Terminal Widget -->
+                <div class="terminal-widget">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-close"></span>
+                            <span class="dot dot-minimize"></span>
+                            <span class="dot dot-expand"></span>
+                        </div>
+                        <div class="terminal-title">profile.py</div>
+                        <button class="copy-btn" id="copy-profile-btn" title="Copy to clipboard">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code id="profile-code" class="python"><span class="keyword">class</span> <span class="class-name">GodavarthiNagaManojBalaji</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="params">self</span>):
+        <span class="params">self</span>.name = <span class="string">"Godavarthi Naga Manoj Balaji"</span>
+        <span class="params">self</span>.username = <span class="string">"Manojgodavarthii"</span>
+        <span class="params">self</span>.role = <span class="string">"B.Tech Computer Engineering (AI & ML)"</span>
+        <span class="params">self</span>.college = <span class="string">"Presidency University, Bangalore"</span>
+        <span class="params">self</span>.location = <span class="string">"Andhra Pradesh, India"</span>
+        <span class="params">self</span>.motto = <span class="string">"Learning is the life 💭"</span>
+        
+    <span class="keyword">def</span> <span class="function">get_socials</span>(<span class="params">self</span>) -> <span class="builtin">dict</span>:
+        <span class="keyword">return</span> {
+            <span class="string">"LinkedIn"</span>: <span class="string">"linkedin.com/in/godavarthi-naga-manoj-balaji/"</span>,
+            <span class="string">"GitHub"</span>: <span class="string">"github.com/Manojgodavarthii"</span>,
+            <span class="string">"Email"</span>: <span class="string">"godaverthinagamnojbalaji@gmail.com"</span>
+        }</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card intro-card">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Academic Path</h3>
+                    <p>I am a <strong>Computer Science & Engineering</strong> graduate from <strong>Presidency University, Bangalore</strong>, with a core concentration in Artificial Intelligence and Machine Learning.</p>
+                </div>
+                
+                <div class="about-card focus-card">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Core Focus</h3>
+                    <p>My passion lies at the intersection of <strong>Deep Learning</strong>, <strong>Computer Vision</strong>, and <strong>Natural Language Processing</strong>. I love building intelligence layers that solve complex real-world problems.</p>
+                </div>
+
+                <div class="about-card growth-card">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Skills Growth</h3>
+                    <p>Currently expanding my capabilities into <strong>Full-Stack Web Development</strong> (React.js) and <strong>MLOps pipelines</strong>, enabling seamless, scalable end-to-end model deployments.</p>
+                </div>
+            </div>
+            
+            <div class="motto-box">
+                <p class="motto-text">"Learning is the life 💭"</p>
+            </div>
+        </section>
+
+        <!-- Core Competencies Section -->
+        <section id="competencies" class="competencies section">
+            <h2 class="section-title">Core Competencies & Stack</h2>
+            
+            <div class="competencies-grid">
+                <!-- AI & ML Card -->
+                <div class="stack-card">
+                    <h3 class="stack-title"><i class="fas fa-robot"></i> AI & Deep Learning</h3>
+                    <div class="skills-wrap">
+                        <span class="skill-badge">Computer Vision</span>
+                        <span class="skill-badge">Predictive Analytics</span>
+                        <span class="skill-badge">NLP</span>
+                        <span class="skill-badge">Rec Systems</span>
+                        <span class="skill-badge">TensorFlow</span>
+                        <span class="skill-badge">PyTorch</span>
+                        <span class="skill-badge">Scikit-Learn</span>
+                        <span class="skill-badge">Pandas</span>
+                        <span class="skill-badge">NumPy</span>
+                        <span class="skill-badge">Jupyter</span>
+                    </div>
+                </div>
+
+                <!-- Languages & Web Dev -->
+                <div class="stack-card">
+                    <h3 class="stack-title"><i class="fas fa-code"></i> Core & Web Dev</h3>
+                    <div class="skills-wrap">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">C Language</span>
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">React.js</span>
+                        <span class="skill-badge">FastAPI</span>
+                        <span class="skill-badge">REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Tooling & Systems -->
+                <div class="stack-card">
+                    <h3 class="stack-title"><i class="fas fa-tools"></i> MLOps & Tooling</h3>
+                    <div class="skills-wrap">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Linux</span>
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">CI/CD</span>
+                        <span class="skill-badge">AWS / GCP</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="projects section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge dl-badge">Deep Learning</span>
+                        <a href="https://github.com/Manojgodavarthii/SAR-Image-Colorization" target="_blank" class="project-github-link" title="Explore Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">SAR Image Colorization</h3>
+                        <p class="project-desc">
+                            Colorizes Synthetic Aperture Radar (SAR) images, restoring natural RGB features from monochrome radar scans using advanced CNNs.
+                        </p>
+                        <ul class="project-highlights">
+                            <li><i class="fas fa-circle-nodes"></i> <strong>CNN Architecture:</strong> Custom-designed layers for pixel-level color mapping.</li>
+                            <li><i class="fas fa-window-restore"></i> <strong>Tkinter GUI:</strong> User-friendly desktop application for inference.</li>
+                            <li><i class="fas fa-satellite"></i> <strong>Radar Processing:</strong> Enhances raw radar data visualization.</li>
+                        </ul>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>CNN</span>
+                            <span>Tkinter</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge ml-badge">Machine Learning</span>
+                        <a href="https://github.com/Manojgodavarthii/Elective-Recommendation-System" target="_blank" class="project-github-link" title="Explore Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Elective Rec System</h3>
+                        <p class="project-desc">
+                            An intelligent course pathways recommendation engine built to guide university curriculum selections dynamically.
+                        </p>
+                        <ul class="project-highlights">
+                            <li><i class="fas fa-filter"></i> <strong>Smart Filtering:</strong> Matches student preferences with historical grades.</li>
+                            <li><i class="fas fa-chart-line"></i> <strong>Data-Driven:</strong> Utilizes correlation coefficient pipelines.</li>
+                            <li><i class="fas fa-graduation-cap"></i> <strong>Optimal Paths:</strong> Aligns curriculum with post-grad goals.</li>
+                        </ul>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-Learn</span>
+                            <span>Pandas</span>
+                            <span>Jupyter</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge nlp-badge">NLP / Transformers</span>
+                        <a href="https://github.com/Manojgodavarthii/BERT-Spam-Email-Detector" target="_blank" class="project-github-link" title="Explore Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">BERT Spam Detector</h3>
+                        <p class="project-desc">
+                            High-performance email spam classifier built by fine-tuning Bidirectional Transformer Encoder representations.
+                        </p>
+                        <ul class="project-highlights">
+                            <li><i class="fas fa-arrows-spin"></i> <strong>BERT Fine-Tuning:</strong> Custom text classification layer on pretrained weights.</li>
+                            <li><i class="fas fa-envelope-open-text"></i> <strong>High Precision:</strong> Maximizes accuracy score in spam classification.</li>
+                            <li><i class="fas fa-fire"></i> <strong>Hugging Face:</strong> Integrated tokenizers and preprocessing pipelines.</li>
+                        </ul>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Hugging Face</span>
+                            <span>BERT</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge web-badge">Frontend Web</span>
+                        <a href="https://github.com/Manojgodavarthii/Automobile-Showroom-Website" target="_blank" class="project-github-link" title="Explore Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Automobile Showroom</h3>
+                        <p class="project-desc">
+                            A modern, responsive, and visually stunning virtual automotive showroom web interface.
+                        </p>
+                        <ul class="project-highlights">
+                            <li><i class="fas fa-wand-magic-sparkles"></i> <strong>Premium Aesthetics:</strong> Styled with modern typography and grids.</li>
+                            <li><i class="fas fa-mobile-screen"></i> <strong>Responsive Layouts:</strong> Dynamic design adapted to all device layouts.</li>
+                            <li><i class="fas fa-gears"></i> <strong>Interactive DOM:</strong> Driven by light client-side scripts.</li>
+                        </ul>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Git Analytics & Stats Section -->
+        <section id="stats" class="stats section">
+            <h2 class="section-title">Git Analytics & Contributions</h2>
+            <p class="section-subtitle">Real-time developer statistics and contribution pipeline</p>
+            
+            <div class="stats-container">
+                <!-- Summary cards grid -->
+                <div class="stats-cards-grid">
+                    <div class="stats-image-wrapper card-glow">
+                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Manojgodavarthii&theme=tokyonight" alt="Manoj's GitHub Stats" loading="lazy" />
+                    </div>
+                    <div class="stats-image-wrapper card-glow">
+                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Manojgodavarthii&theme=tokyonight" alt="Manoj's Streak Stats" loading="lazy" />
+                    </div>
+                </div>
+
+                <!-- Language analysis grid -->
+                <div class="stats-cards-grid">
+                    <div class="stats-image-wrapper card-glow">
+                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Manojgodavarthii&theme=tokyonight" alt="Manoj's Top Languages" loading="lazy" />
+                    </div>
+                    <div class="stats-image-wrapper card-glow">
+                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Manojgodavarthii&theme=tokyonight" alt="Manoj's Commit Languages" loading="lazy" />
+                    </div>
+                </div>
+
+                <!-- Contribution activity graph -->
+                <div class="activity-graph-container card-glow">
+                    <h3>📈 Contribution Activity</h3>
+                    <div class="stats-image-wrapper">
+                        <img src="https://github-readme-activity-graph.vercel.app/graph?username=Manojgodavarthii&bg_color=16161e&color=7aa2f7&line=7aa2f7&point=bb9af7&area=true&hide_border=true" alt="Manoj's Contribution Graph" loading="lazy" />
+                    </div>
+                </div>
+
+                <!-- Snake game grid -->
+                <div class="snake-container card-glow">
+                    <h3>🐍 Contribution Snake Grid</h3>
+                    <div class="stats-image-wrapper">
+                        <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Contribution Grid Snake" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Connect Section -->
+        <section id="contact" class="contact section">
+            <h2 class="section-title">Connect With Me</h2>
+            <p class="section-subtitle">Let's collaborate on innovative Deep Learning or MLOps projects</p>
+            
+            <div class="contact-grid">
+                <a href="mailto:godaverthinagamnojbalaji@gmail.com" class="contact-card">
+                    <div class="contact-icon email-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <span class="contact-link">godaverthinagamnojbalaji@gmail.com</span>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/godavarthi-naga-manoj-balaji/" target="_blank" class="contact-card">
+                    <div class="contact-icon linkedin-icon"><i class="fab fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <span class="contact-link">Connect on LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/Manojgodavarthii" target="_blank" class="contact-card">
+                    <div class="contact-icon github-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <span class="contact-link">Manojgodavarthii</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Godavarthi Naga Manoj Balaji. Made with passion & precision.</p>
+            <p class="footer-sub">Motto: <em>"Learning is the life 💭"</em></p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
