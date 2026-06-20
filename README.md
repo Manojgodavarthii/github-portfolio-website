@@ -1,4 +1,4 @@
-<p align="center">
+ <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7aa2f7,100:bb9af7&height=180&section=header&text=Godavarthi%20Naga%20Manoj%20Balaji&fontSize=30&fontAlignY=35&theme=tokyonight" />
 </p>
 
